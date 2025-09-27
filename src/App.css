@@ -1,0 +1,53 @@
+@reference "./index.css";
+
+/* Container for AI responses */
+.gemini-response {
+  @apply bg-gray-50 rounded-xl py-4 px-5 my-3 font-sans leading-relaxed text-sm text-gray-800 shadow max-w-3xl;
+}
+
+/* Paragraph spacing */
+.gemini-response p {
+  @apply my-0.5;
+}
+
+/* Code block styling */
+.gemini-response pre {
+  @apply bg-slate-800 text-slate-50 py-3 px-4 rounded-lg overflow-x-auto text-sm leading-normal my-3;
+}
+
+/* Inline code */
+.gemini-response code {
+  @apply bg-gray-200 py-0.5 px-1.5 rounded font-mono text-sm;
+}
+
+/* Lists */
+.gemini-response ul,
+.gemini-response ol {
+  @apply my-2 ml-5 p-0;
+}
+
+.gemini-response li {
+  @apply my-1;
+}
+
+/* Headings inside response */
+.gemini-response h1,
+.gemini-response h2,
+.gemini-response h3 {
+  @apply mt-4 mb-2 font-semibold text-gray-900;
+}
+
+.gemini-response h1 {
+  @apply text-xl;
+}
+.gemini-response h2 {
+  @apply text-lg;
+}
+.gemini-response h3 {
+  @apply text-base;
+}
+
+/* Blockquote for AI emphasis */
+.gemini-response blockquote {
+  @apply border-l-4 border-blue-500 bg-blue-50 py-2 px-3 my-3 rounded-md text-blue-800;
+}
